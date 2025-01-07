@@ -1,0 +1,147 @@
+[33mcommit 7035cd1a5841605fed16b5f134ddc22a6bae07fe[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m
+Author: lnxlnxlnx <a16725798566@163.com>
+Date:   Tue Jan 7 20:46:23 2025 +0800
+
+    first modify
+
+[1mdiff --git a/.vscode/c_cpp_properties.json b/.vscode/c_cpp_properties.json[m
+[1mnew file mode 100644[m
+[1mindex 0000000..bb52b7f[m
+[1m--- /dev/null[m
+[1m+++ b/.vscode/c_cpp_properties.json[m
+[36m@@ -0,0 +1,20 @@[m
+[32m+[m[32m{[m
+[32m+[m[32m    "configurations": [[m
+[32m+[m[32m        {[m
+[32m+[m[32m            "name": "Win32",[m
+[32m+[m[32m            "includePath": [[m
+[32m+[m[32m                "${workspaceFolder}/**"[m
+[32m+[m[32m            ],[m
+[32m+[m[32m            "defines": [[m
+[32m+[m[32m                "_DEBUG",[m
+[32m+[m[32m                "UNICODE",[m
+[32m+[m[32m                "_UNICODE"[m
+[32m+[m[32m            ],[m
+[32m+[m[32m            "cStandard": "c17",[m
+[32m+[m[32m            "cppStandard": "gnu++14",[m
+[32m+[m[32m            "intelliSenseMode": "windows-gcc-x64",[m
+[32m+[m[32m            "compilerPath": "D:/x86_64-8.1.0-release-posix-seh-rt_v6-rev0/mingw64/bin/gcc.exe"[m
+[32m+[m[32m        }[m
+[32m+[m[32m    ],[m
+[32m+[m[32m    "version": 4[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/.vscode/launch.json b/.vscode/launch.json[m
+[1mnew file mode 100644[m
+[1mindex 0000000..766bb3a[m
+[1m--- /dev/null[m
+[1m+++ b/.vscode/launch.json[m
+[36m@@ -0,0 +1,10 @@[m
+[32m+[m[32m{[m
+[32m+[m[32m    // 使用 IntelliSense 了解相关属性。[m[41m [m
+[32m+[m[32m    // 悬停以查看现有属性的描述。[m
+[32m+[m[32m    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387[m
+[32m+[m[32m    "version": "0.2.0",[m
+[32m+[m[32m    "configurations": [[m
+[32m+[m[41m        [m
+[32m+[m
+[32m+[m[32m    ][m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/.vscode/settings.json b/.vscode/settings.json[m
+[1mnew file mode 100644[m
+[1mindex 0000000..34fef06[m
+[1m--- /dev/null[m
+[1m+++ b/.vscode/settings.json[m
+[36m@@ -0,0 +1,55 @@[m
+[32m+[m[32m{[m
+[32m+[m[32m    "files.associations": {[m
+[32m+[m[32m        "ostream": "cpp",[m
+[32m+[m[32m        "iostream": "cpp",[m
+[32m+[m[32m        "deque": "cpp",[m
+[32m+[m[32m        "array": "cpp",[m
+[32m+[m[32m        "atomic": "cpp",[m
+[32m+[m[32m        "*.tcc": "cpp",[m
+[32m+[m[32m        "cstddef": "cpp",[m
+[32m+[m[32m        "cstdio": "cpp",[m
+[32m+[m[32m        "cwchar": "cpp",[m
+[32m+[m[32m        "vector": "cpp",[m
+[32m+[m[32m        "memory": "cpp",[m
+[32m+[m[32m        "memory_resource": "cpp",[m
+[32m+[m[32m        "optional": "cpp",[m
+[32m+[m[32m        "string_view": "cpp",[m
+[32m+[m[32m        "tuple": "cpp",[m
+[32m+[m[32m        "type_traits": "cpp",[m
+[32m+[m[32m        "fstream": "cpp",[m
+[32m+[m[32m        "initializer_list": "cpp",[m
+[32m+[m[32m        "new": "cpp",[m
+[32m+[m[32m        "stdexcept": "cpp",[m
+[32m+[m[32m        "system_error": "cpp",[m
+[32m+[m[32m        "typeinfo": "cpp",[m
+[32m+[m[32m        "utility": "cpp",[m
+[32m+[m[32m        "cctype": "cpp",[m
+[32m+[m[32m        "string": "cpp",[m
+[32m+[m[32m        "unordered_map": "cpp",[m
+[32m+[m[32m        "istream": "cpp",[m
+[32m+[m[32m        "sstream": "cpp",[m
+[32m+[m[32m        "streambuf": "cpp",[m
+[32m+[m[32m        "algorithm": "cpp",[m
+[32m+[m[32m        "cmath": "c",[m
+[32m+[m[32m        "exception": "c",[m
+[32m+[m[32m        "limits": "c",[m
+[32m+[m[32m        "string.h": "c",[m
+[32m+[m[32m        "cerrno": "c",[m
+[32m+[m[32m        "climits": "c",[m
+[32m+[m[32m        "clocale": "c",[m
+[32m+[m[32m        "cstdarg": "c",[m
+[32m+[m[32m        "cstdint": "c",[m
+[32m+[m[32m        "cstdlib": "c",[m
+[32m+[m[32m        "cwctype": "c",[m
+[32m+[m[32m        "ios": "c",[m
+[32m+[m[32m        "iosfwd": "c",[m
+[32m+[m[32m        "queue": "c",[m
+[32m+[m[32m        "random": "c",[m
+[32m+[m[32m        "list": "cpp"[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "C_Cpp.errorSquiggles": "disabled",[m
+[32m+[m[32m    "cmake.ignoreCMakeListsMissing": true,[m
+[32m+[m[32m    "files.autoGuessEncoding": true,[m
+[32m+[m[32m    "editor.fontSize":18,[m
+[32m+[m[32m    "window.zoomLevel":1.5[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/.vscode/tasks.json b/.vscode/tasks.json[m
+[1mnew file mode 100644[m
+[1mindex 0000000..81efcea[m
+[1m--- /dev/null[m
+[1m+++ b/.vscode/tasks.json[m
+[36m@@ -0,0 +1,28 @@[m
+[32m+[m[32m{[m
+[32m+[m[32m    "tasks": [[m
+[32m+[m[32m        {[m
+[32m+[m[32m            "type": "cppbuild",[m
+[32m+[m[32m            "label": "C/C++: c_language_vscode.c 生成活动文件",[m
+[32m+[m[32m            "command": "e:\\c_language_vscode.c",[m
+[32m+[m[32m            "args": [[m
+[32m+[m[32m                "-fdiagnostics-color=always",[m
+[32m+[m[32m                "-g",[m
+[32m+[m[32m                "${file}",[m
+[32m+[m[32m                "-o",[m
+[32m+[m[32m                "${fileDirname}\\${fileBasenameNoExtension}.exe"[m
+[32m+[m[32m            ],[m
+[32m+[m[32m            "options": {[m
+[32m+[m[32m                "cwd": "e:\\"[m
+[32m+[m[32m            },[m
+[32m+[m[32m            "problemMatcher": [[m
+[32m+[m[32m                "$gcc"[m
+[32m+[m[32m            ],[m
+[32m+[m[32m            "group": {[m
+[32m+[m[32m                "kind": "build",[m
+[32m+[m[32m                "isDefault": true[m
+[32m+[m[32m            },[m
+[32m+[m[32m            "detail": "调试器生成的任务。"[m
+[32m+[m[32m        }[m
+[32m+[m[32m    ],[m
+[32m+[m[32m    "version": "2.0.0"[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
